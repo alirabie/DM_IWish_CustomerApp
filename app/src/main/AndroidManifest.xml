@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.appsmatic.com.iwishcustomerapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconluncher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+        >
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.SignIn"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.ForgetpasswordS1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.SecurityCode"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.NewPassword"
+            android:label="@string/title_activity_new_password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.GuestSplash"
+            android:label="@string/title_activity_guest_splash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.Customization"
+            android:label="@string/title_activity_customization"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.MinWidth" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.PickUpService"
+            android:label="@string/title_activity_pick_up_serv" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.ShoppingCart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.DeliveryService"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.DialogLogin"
+            android:label="@string/title_activity_dialog_login"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.LocationDetails"
+            android:label="@string/title_activity_location_details"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.OrderDetails"
+            android:label="@string/title_activity_current_order_details"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.MinWidth" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.PreviuosOrderDetails"
+            android:label="@string/title_activity_previuos_order_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.appsmatic.com.iwishcustomerapp.Activites.Confirmation"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

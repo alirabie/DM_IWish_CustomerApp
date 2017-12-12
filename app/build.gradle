@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    dexOptions {
+        incremental = true;
+        preDexLibraries = false
+        javaMaxHeapSize "4g" // 2g should be also OK
+    }
+    defaultConfig {
+        applicationId "app.appsmatic.com.iwishcustomerapp"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        generatedDensities = []
+
+    }
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'de.hdodenhof:circleimageview:1.2.1'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.android.support:support-v13:23.+'
+    compile 'com.android.support:support-v4:+'
+    compile files('libs/android-viewbadger.jar')
+}
+
+dependencies {
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.sd6352051.niftydialogeffects:niftydialogeffects:1.0.0@aar'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-ads:9.6.1'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-identity:9.6.1'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-gcm:9.6.1'
+}
+dependencies {
+    compile 'com.android.support:support-v4:23.+'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services:4.2.42'
+    compile 'com.android.support:appcompat-v7:23.+'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-ads:9.6.1'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-identity:9.6.1'
+}
+dependencies {
+    compile 'com.google.android.gms:play-services-gcm:9.6.1'
+}
+
+dependencies {
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.sd6352051.niftydialogeffects:niftydialogeffects:1.0.0@aar'
+    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
